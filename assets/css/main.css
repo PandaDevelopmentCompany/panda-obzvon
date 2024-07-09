@@ -1709,7 +1709,7 @@ img.img_about_us {
 		}
 		article#work {
 			background: none;
-			width: 80%;
+			width: 85%;
 		}
 		article#about {
 			background: none;
@@ -1725,6 +1725,15 @@ img.img_about_us {
 			width: 0;
 		}
 
+		/*Убрать полосу прокрутки у элемента*/
+		.element::-webkit-scrollbar {
+		  width: 0;
+		}
+
+		/*Убрать полосу прокрутки для всей страницы*/
+		::-webkit-scrollbar {
+		  width: 0;
+		}
 
 
 
@@ -1751,3 +1760,249 @@ img.img_about_us {
 		display: none !important;
 	}
 }
+
+
+
+
+
+
+
+/* diagrams pie charts */
+
+main {
+    position: relative;
+    display: block;	
+    height: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.pie-container {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.pie-container::after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 50;
+    width: 50%;
+    height: 50%;
+    color: white;
+    background-color: #fff;
+background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.8);
+}
+
+.pie{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+    clip: rect(0px, 75px, 150px, 0px);
+}
+
+#withoutanswer{
+    z-index: 40;
+    background-color: #aaaaaa;
+    transform: rotate(-160deg);
+}
+
+#order {
+    z-index: 10;
+    background-color: #0074d9;
+    transform: rotate(8.32deg);
+}
+
+#reset {
+    z-index: 30;
+    background-color: #ff851b;
+    transform: rotate(124.56deg);
+}
+
+#heard {
+    z-index: 20;
+    background-color: #2ecc40;
+    transform: rotate(62deg);
+}
+
+.stats {
+    float: left;
+    margin-left: 50px;
+}
+
+main ul {
+   list-style: none;
+}
+
+main li{
+    position: relative;
+    margin: 10px 0;
+}
+
+main li::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: #aaaaaa;
+}
+
+main li:first-child::before {
+    background-color: #2ecc40;
+}
+
+main li:nth-child(2)::before {
+    background-color: #ff851b;
+}
+
+main li:nth-child(3)::before {
+    background-color: #0074d9;
+}
+
+
+/* кейс 1 диаграммы */
+#heard_1 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(40deg);
+}
+#heard_11 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(-120deg);
+}
+#order_1 {
+    z-index: 9;
+    background-color: #2ecc40;
+    transform: rotate(160deg);
+}
+
+main.main_1 li:first-child::before {
+    background-color: #0074d9;
+}
+
+main.main_1 li:nth-child(2)::before {
+    background-color: #2ecc40;
+}
+
+
+/* кейс 3 диаграммы */
+#heard_2 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(40deg);
+}
+#heard_22 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(-120deg);
+}
+#order_2 {
+    z-index: 9;
+    background-color: #2ecc40;
+    transform: rotate(160deg);
+}
+
+main.main_2 li:first-child::before {
+    background-color: #0074d9;
+}
+
+main.main_2 li:nth-child(2)::before {
+    background-color: #2ecc40;
+}
+
+
+/* кейс 3 диаграммы */
+#heard_3 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(40deg);
+}
+#heard_33 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(-120deg);
+}
+#order_3 {
+    z-index: 9;
+    background-color: #2ecc40;
+    transform: rotate(160deg);
+}
+
+main.main_3 li:first-child::before {
+    background-color: #0074d9;
+}
+
+main.main_3 li:nth-child(2)::before {
+    background-color: #2ecc40;
+}
+
+
+/* кейс 4 диаграммы */
+#heard_4 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(40deg);
+}
+#heard_44 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(-120deg);
+}
+#order_4 {
+    z-index: 9;
+    background-color: #2ecc40;
+    transform: rotate(160deg);
+}
+
+main.main_4 li:first-child::before {
+    background-color: #0074d9;
+}
+
+main.main_4 li:nth-child(2)::before {
+    background-color: #2ecc40;
+}
+
+
+
+/* кейс 5 диаграммы */
+#heard_5 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(40deg);
+}
+#heard_55 {
+    z-index: 40;
+    background-color: #0074d9;
+    transform: rotate(-120deg);
+}
+#order_5 {
+    z-index: 9;
+    background-color: #2ecc40;
+    transform: rotate(160deg);
+}
+
+main.main_5 li:first-child::before {
+    background-color: #0074d9;
+}
+
+main.main_5 li:nth-child(2)::before {
+    background-color: #2ecc40;
+}
+
