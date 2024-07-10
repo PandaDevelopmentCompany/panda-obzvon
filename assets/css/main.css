@@ -1902,16 +1902,16 @@ main.main_1 li:nth-child(2)::before {
 }
 
 
-/* кейс 3 диаграммы */
+/* кейс 2 диаграммы */
 #heard_2 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(40deg);
+    transform: rotate(0deg);
 }
 #heard_22 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(-120deg);
+    transform: rotate(-160deg);
 }
 #order_2 {
     z-index: 9;
@@ -1932,12 +1932,12 @@ main.main_2 li:nth-child(2)::before {
 #heard_3 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(40deg);
+    transform: rotate(-20deg);
 }
 #heard_33 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(-120deg);
+    transform: rotate(-180deg);
 }
 #order_3 {
     z-index: 9;
@@ -1985,12 +1985,12 @@ main.main_4 li:nth-child(2)::before {
 #heard_5 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(40deg);
+    transform: rotate(0deg);
 }
 #heard_55 {
     z-index: 40;
     background-color: #0074d9;
-    transform: rotate(-120deg);
+    transform: rotate(-160deg);
 }
 #order_5 {
     z-index: 9;
